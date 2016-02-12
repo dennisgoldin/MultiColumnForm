@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-family: 'Lato', 'Calibri', Arial, sans-serif;
     color: #FFF;
     background: #47A3DA;
     margin: 0 auto;
@@ -26,9 +26,9 @@ footer {
 	clear: both;
 }
 
-.form:after {
+/*.form:after {
 	clear: both;
-}
+}*/
 
 form {
   postion: relative;
@@ -62,8 +62,8 @@ form textarea {
 	min-height: 200px;
 }
 
-form input:focus, form textarea:focus,
-form label:active + input, label:active + textarea {
+.form input:focus, .form textarea:focus,
+.form label:active + input, label:active + textarea {
 	outline: none;
 	border: 3px solid #10689A;
 }
@@ -94,3 +94,17 @@ form select:focus {
 .form input.submitButton:hover {
 	background: #1478B1;
 }
+
+@media screen and (max-width: 1050px) {
+	.column1, .column2 {
+		width: 40%;
+	}
+	.column3 {
+		width: 87.5%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.column1, .column2, .column3 {
+		width: 87.5%;
+	}

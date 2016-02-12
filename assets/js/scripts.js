@@ -6,6 +6,7 @@ var myFormElements = myForm.elements;
 myForm.addEventListener('submit', function (e) {
   e.preventDefault();
   console.log(formData(myFormElements));
+  myForm.reset();
 });
 
 function formData(frm) {
