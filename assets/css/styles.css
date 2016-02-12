@@ -9,18 +9,38 @@ body {
 header {
   width: 99%;
   padding: 25px;
-  border: 1px dashed red;
+  /*border: 1px dashed red;*/
 }
 
 section {
-  width: 30%;
+  width: 26%;
 	padding: 10px 30px 10px 30px;
 	float: left;
-  border: 1px dashed #000;
+  /*border: 1px dashed #000;*/
+}
+
+footer {
+	text-align: center;
+	padding-top: 40px;
+  padding-bottom: 40px;
+	clear: both;
+}
+
+.form:after {
+	clear: both;
 }
 
 form {
   postion: relative;
+}
+
+.form label {
+	display: block;
+	padding: 40px 5px 5px 2px;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
 }
 
 form input, form textarea, form select {
@@ -45,14 +65,32 @@ form textarea {
 form input:focus, form textarea:focus,
 form label:active + input, label:active + textarea {
 	outline: none;
-	border: 3px solid #10689a;
+	border: 3px solid #10689A;
 }
 
 form select:focus {
 	outline: none;
 }
 
-::--webkit-input-placeholder { 
-    color: #10689a;
+::-webkit-input-placeholder {
+    color: #10689A;
     font-style: italic;
+}
+
+.form input.submitButton {
+	background: #10689A;
+	border: none;
+	color: #FFF;
+	width: auto;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+.form input.submitButton:hover {
+	background: #1478B1;
 }
