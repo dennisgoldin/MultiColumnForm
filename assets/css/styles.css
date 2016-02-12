@@ -26,10 +26,6 @@ footer {
 	clear: both;
 }
 
-/*.form:after {
-	clear: both;
-}*/
-
 form {
   postion: relative;
 }
