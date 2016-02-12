@@ -2,15 +2,17 @@
 <html>
   <head>
     <link type="text/css" rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/styles.css">
     <title>Responsive Mutli-Column Form</title>
   </head>
   <body class="">
-    <form class="">
+    <form class="form">
+      <header>
+      </header>
 
-	    <div class="">
+	    <section class="column">
         <label for="firstName">First Name</label>
 	      <input type="text" id="firstName" name="firstName" placeholder="Jane">
 		    <label for="lastName">Last Name</label>
@@ -29,9 +31,9 @@
 	      </select>
 		    <label for="biography">Biography</label>
 		    <textarea id="biography" name="biography"></textarea>
-	    </div>
+	    </section>
 
-      <div class="">
+      <section id="column1">
 		    <label for="phone">Phone Number</label>
 		    <input type="text" id="phone" name="phone" placeholder="+333-555-9999">
 		    <label for="affiliations">Affiliations</label>
@@ -49,9 +51,9 @@
 		    <input type="text" id="catName" name="catName" placeholder="Felix">
 		    <label for="gagdet">Favorite Gadget</label>
 		    <input type="text" id="gagdet" name="gagdet" placeholder="Rule-A-Copter">
-	    </div>
+	    </section>
 
-      <div class="">
+      <section class="column">
 		    <label>Type of Talent</label>
 		    <select id="talent" name="talent">
 		      <option>Choose a talent</option>
@@ -70,8 +72,10 @@
 		    <input type="weapon" id="weapon" name="weapon" placeholder="Spork">
 		    <label for="comments">Comments</label>
 		    <textarea id="comments" name="comments"></textarea>
-	    </div>
-
+	    </section>
+      <footer>
+        <input class="submitButton" type="submit" value="Send your data" />
+      </footer>
       <script src="./assets/js/scripts.js"></script>
     </form>
   </body>
