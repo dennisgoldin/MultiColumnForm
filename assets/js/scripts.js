@@ -14,7 +14,9 @@ function formData(frm) {
           + format("Key")
           + format("Value") + "\n"
           + "-------------------------------------------\n";
-  for (var i = 0; i < frm.length; i++) {
+  // below I use frm.length - 1 because I don't want data for key 'submit' in
+  // output which is the last item in this collection
+  for (var i = 0; i < frm.length - 1; i++) {
     str = str + format(frm[i].type)
               + format(frm[i].name)
               + format(frm[i].value) + "\n";
